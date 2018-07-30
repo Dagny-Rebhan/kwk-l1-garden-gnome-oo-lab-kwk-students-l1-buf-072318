@@ -3,9 +3,7 @@
 class GardenGnome
   attr_accessor :names, :age, :gluten_allergy
   attr_reader :personality
-  def initialize(evil, hat_color = "red")
-    @personality = evil
-    "The Gnomes hat color is #{hat_color}."
+  def initialize(personality = "evil", hat_color = "red")
   end
   def gnaw
     "Gnawing on a tree!!!"
